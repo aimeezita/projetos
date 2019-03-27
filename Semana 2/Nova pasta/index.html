@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <title>Portifólio Aimee</title>
+    <meta name="viewport" content="width=device-width, initial-sacale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="../Nova pasta/src/css/style.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <!-- Logo ou nome do projeto (brand) -->
+                <a class="navbar-brand" href="#">Aimée Thompson</a>
+                <!--Menu responsivo (Hamburguinho)  -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                    aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Itens do Menu -->
+                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                    <ul class="navbar-nav mr-auto">
+                        <!-- Links do Menu -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre Mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portifólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Orçamento</a>
+                        </li>
+                        <!-- Menu Dropdown -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contato
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <!-- Links do Menu Dropdown -->
+                                <a class="dropdown-item" href="#">Linkedin</a>
+                                <a class="dropdown-item" href="#">GitHub</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Algo mais aqui</a>
+                            </div>
+                        </li>
+                        <!-- Desativado
+                            <li class="nav-item">
+                              <a class="nav-link disabled" href="#">Desativado</a>
+                            </li>
+                             -->
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="src/assets/IMG_20190108_165757.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption">
+                        <h4>Olá, eu sou a Aimée.</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="src/assets/IMG_20190110_201906 (1).jpg" alt="Segundo Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="src/assets/car-03.jpg" alt="Terceiro Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Portifólio -->
+    <section id="portifolio" class="portifolio">
+        <div class="container">
+            <p class="title-sectoion">Portifólio</p>
+            <p class="text"> blablablablablaabla</p>
+            <div class="card-deck">
+
+                <div class="card" id="card1">
+                    <img class="site_img" src="src/assets/site1.jpg" alt="">
+                    <div class="card-body">
+                        <p class="card-text">Projeto desenvolvido durante um workshop da Reprograma.
+                            <br>
+                            <!-- Botão para acionar modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#modalExemplo-1">
+                                Leia mais
+                            </button>
+
+                           
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="modalExemplo-1" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Senai Infocast</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                Trabalho em equipe que desenvolvemos a home page do Senai Infocast, para a Escola de
+                                Informática do Senai. Projeto tecnicamente desafiador, pois o cliente demandava a
+                                elaboração de um site a partir de um design complexo e moderno, levando em consideração
+                                os conceitos de Pixel Perfect e Responsividade Fluida. O grupo escolheu não utilizar
+                                bibliotecas externas de estilo e nem frameworks, para desenvolver do zero, utilizamos
+                                código em HTML, CSS, JavaScript para consumir a API utilizada pelo podcast e ao final do
+                                projeto subimos a aplicação no servidor do cliente.
+                                <a>https://infocast-dev.azurewebsites.net/</a>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card" id="card2">
+                    <img class="site_img" src="src/assets/site2.jpg" alt="">
+                    <div class="card-body">
+                        <p class="card-text"> Exercício feito durante a primeira aula de Design Responsivo.</p>
+
+                    </div>
+                    <button class="bt"><a href="https://exercicioresponsivoreprograma.netlify.com/" target="_blank"
+                            class="btn_link"> Acesse aqui</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sobre Mim -->
+        <div class="sobreMim" id="sobreMim">
+            <div class="container">
+                <h1 class="titles"> Sobre mim </h1>
+                <img src="src/assets/eu.jpg" alt="" class="sobreMim_img">
+                <h3 class="sobreMim_description"> Sou formada em Desenvolvimento de Jogos Digitais pela <a
+                        href="https://www.faesa.br/curso/jogos-digitais/#saiba-mais1" target="_blank">Faesa</a>. Sou
+                    apaixonada pela área de tecnologia, games, e música. Sou uma mulher forte, determinada e destemida
+                    em busca das realizações profissionais e pessoais. </h3>
+
+                <button class="bt_sobre_mim"><a href="https://aimeezita.netlify.com/assets/curriculo.pdf"
+                        target="_blank" class="btn_link"> Acesse aqui</a>
+
+            </div>
+        </div>
+
+        <div class="contato" id="contato">
+            <div class="container">
+
+                <h1 class="contato_title titles">Entre em contato</h1>
+                <div class="contato_icons">
+                    <a href="https://github.com/aimeezita" target="_blank" class="contato_img"> <img
+                            src="src/assets/github.svg" alt="link para o github" class="contato_img-icon"></a>
+                    <a href="https://www.facebook.com/aimeezita" target="_blank" class="contato_img"> <img
+                            src="src/assets/facebook.svg" alt="link para o facebook" class="contato_img-icon"></a>
+                    <a href="https://www.linkedin.com/in/aimee-ferreira-b5646515/" target="_blank" class="contato_img">
+                        <img src="src/assets/linkedin.svg" alt="link para o linkedin" class="contato_img-icon"></a>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
